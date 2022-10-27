@@ -21,7 +21,7 @@ function Home({ providers }) {
 
       <header className='flex items-center justify-around py-4'>
         <div className='relative h-10 w-36'>
-          <Image src={Logo} layout='fill' objectFit='contain' />
+          <Image src={Logo} layout='fill' objectFit='contain' alt='Logo' />
         </div>
         <div className='flex items-center divide-gray-300 sm:divide-x'>
           <div className='hidden pr-4 space-x-8 sm:flex'>
@@ -74,7 +74,7 @@ function Home({ providers }) {
         </div>
 
         <div className='relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-14 right-5'>
-          <Image src='https://rb.gy/vkzpzt' layout='fill' priority />
+          <Image src='https://rb.gy/vkzpzt' layout='fill' alt='hero' priority />
         </div>
       </main>
     </div>

@@ -1,7 +1,10 @@
 import { Avatar, IconButton } from '@mui/material'
+import Image from 'next/image'
+import ReplyRoundedIcon from '@mui/icons-material/ReplyRounded'
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded'
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded'
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded'
+import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined'
 import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined'
 import ThumbUpOffAltRoundedIcon from '@mui/icons-material/ThumbUpOffAltRounded'
 import { useRecoilState } from 'recoil'
@@ -69,7 +72,7 @@ function Post({ post, modalPost }) {
       )}
 
       {post.photoUrl && !modalPost && (
-        <img
+        <Image
           src={post.photoUrl}
           alt=''
           className='w-full cursor-pointer'
